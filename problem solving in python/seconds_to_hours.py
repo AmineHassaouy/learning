@@ -3,3 +3,5 @@ num = int(input("enter a number in seconds"))
 H = num//3600
 M = (num%3600) // 60
 S = num % 60
+
+print(f"{H} hours, {M} minutes, {S} seconds")
