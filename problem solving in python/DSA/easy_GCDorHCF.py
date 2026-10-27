@@ -44,3 +44,32 @@ if __name__ == '__main__':
     a = 20
     b = 28
     print(gcd(a, b))
+
+# Method 3: Euclidean Algorithm using Subtraction by Checking Divisibility
+def gcd(a, b):
+    # Everything divides 0
+    if a == 0:
+        return b
+    if b == 0:
+        return a
+
+    # Base case
+    if a == b:
+        return a
+
+    # a is greater
+    if a > b:
+        if a % b == 0:
+            return b
+        return gcd(a - b, b)
+
+    # b is greater
+    if b % a == 0:
+        return a
+    return gcd(a, b - a)
+
+
+if __name__ == '__main__':
+    a = 20
+    b = 28
+    print(gcd(a, b))
