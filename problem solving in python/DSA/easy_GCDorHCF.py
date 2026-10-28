@@ -73,3 +73,14 @@ if __name__ == '__main__':
     a = 20
     b = 28
     print(gcd(a, b))
+
+# Method 4: Optimized Euclidean Algorithm by Checking Remainder
+
+# Recursive function to calculate GCD using Euclidean algorithm
+def gcd(a, b):
+    return a if b == 0 else gcd(b, a % b)
+
+if __name__ == '__main__':
+    a = 20
+    b = 28
+    print(gcd(a, b))
