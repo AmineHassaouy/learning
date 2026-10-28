@@ -84,3 +84,15 @@ if __name__ == '__main__':
     a = 20
     b = 28
     print(gcd(a, b))
+
+# Method 5: Built-in Function
+import math
+
+def gcd(a, b):
+    return math.gcd(a, b)
+
+
+if __name__ == '__main__':
+    a = 20
+    b = 28
+    print(gcd(a, b))
