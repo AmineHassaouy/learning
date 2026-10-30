@@ -12,3 +12,14 @@ def findSum(n):
 if __name__ == "__main__":
     n = 5
     print(findSum(n))
+    
+# Method 2: best approach
+def findSum(n):
+    
+    # Using mathematical formula to compute
+    # sum of first n natural numbers
+    return n * (n + 1) // 2
+    
+if __name__ == "__main__":
+    n = 5
+    print(findSum(n))
