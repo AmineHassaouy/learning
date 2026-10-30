@@ -23,3 +23,15 @@ def findSum(n):
 if __name__ == "__main__":
     n = 5
     print(findSum(n))
+
+# Method 3: recursion
+def findSum(n):
+    
+    # base condition
+    if n == 1:
+        return 1
+    return n + findSum(n - 1)
+
+if __name__ == "__main__":
+    n = 5
+    print(findSum(n))
